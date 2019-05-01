@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/data/movie-list.dart';
 import 'package:flutter_demo/pages/auth.dart';
 import 'package:flutter_demo/pages/columns.dart';
 import 'package:flutter_demo/pages/movies.dart';
-import 'package:flutter_demo/pages/my-stateless-widget.dart';
 import 'package:flutter_demo/pages/rows.dart';
+import 'package:flutter_demo/pages/stateful.dart';
+import 'package:flutter_demo/pages/stateless.dart';
+import 'package:flutter_demo/pages/welcome.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,13 +17,17 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.light,
-        primarySwatch: Colors.green,
-      ),
-      home: AuthPage(),
+          brightness: Brightness.light,
+          primaryColor: Colors.green,
+          primarySwatch: Colors.yellow),
+      // home: WelcomePage(),
       routes: {
+        '/': (BuildContext context) => WelcomePage(),
         'form': (BuildContext context) => AuthPage(),
-        'statelesswidget': (BuildContext context) => MyStatelessWidget(),
+        'stateless_widget': (BuildContext context) => StatelessPage(
+              movie: MovieList.getSingleMovie(),
+            ),
+        'stateful_widget': (BuildContext context) => StatefulPage(),
         'movies': (BuildContext context) => MoviesPage(),
         'rows': (BuildContext context) => RowsPage(),
         'columns': (BuildContext context) => ColumnsPage()

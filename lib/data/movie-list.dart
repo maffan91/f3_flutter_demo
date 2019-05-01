@@ -1,6 +1,15 @@
 import 'package:flutter_demo/models/movie.dart';
 
 class MovieList {
+  static Movie getSingleMovie() {
+    return Movie(
+        title: 'Avengers: Endgame',
+        genre: 'Action, Adventure, Fantasy',
+        year: '2019',
+        imageUrl:
+            'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SY1000_CR0,0,674,1000_AL_.jpg');
+  }
+
   static List<Movie> getMovies() {
     return [
       Movie(
