@@ -8,19 +8,35 @@ class NavDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
-            child: Text('Drawer Header'),
-            decoration: BoxDecoration(color: Colors.green),
+            child: Text(
+              'Flutter Demo',
+              style: TextStyle(color: Colors.white, fontSize: 25),
+            ),
+            decoration: BoxDecoration(
+                color: Colors.green,
+                image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage('assets/images/food.jpg'))),
+          ),
+          ListTile(
+            leading: Icon(Icons.input),
+            title: Text('Welcome'),
+            onTap: () => Navigator.pushReplacementNamed(context, '/'),
           ),
           ListTile(
             leading: Icon(Icons.bookmark_border),
             title: Text('Stateless Widget'),
+            onTap: () =>
+                Navigator.pushReplacementNamed(context, 'stateless_widget'),
           ),
           ListTile(
             leading: Icon(Icons.bookmark),
             title: Text('Stateful Widget'),
+            onTap: () =>
+                Navigator.pushReplacementNamed(context, 'stateful_widget'),
           ),
           ListTile(
-            leading: Icon(Icons.line_weight),
+            leading: Icon(Icons.view_headline),
             title: Text('Rows'),
             onTap: () => Navigator.pushReplacementNamed(context, 'rows'),
           ),
