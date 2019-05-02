@@ -25,7 +25,7 @@ class ColumnsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Column Layout'),
+        title: Text('Columns Layout Demo'),
       ),
       drawer: NavDrawer(),
       body: _buildWidget(),

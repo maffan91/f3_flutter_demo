@@ -82,7 +82,7 @@ class _AuthPageState extends State<AuthPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Login'),
+          title: Text('Form Demo'),
         ),
         drawer: NavDrawer(),
         body: _buildAuthForm());

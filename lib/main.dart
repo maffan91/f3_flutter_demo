@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/data/movie-list.dart';
+import 'package:flutter_demo/pages/animation.dart';
 import 'package:flutter_demo/pages/auth.dart';
 import 'package:flutter_demo/pages/columns.dart';
 import 'package:flutter_demo/pages/movies.dart';
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
         'stateful_widget': (BuildContext context) => StatefulPage(),
         'movies': (BuildContext context) => MoviesPage(),
         'rows': (BuildContext context) => RowsPage(),
-        'columns': (BuildContext context) => ColumnsPage()
+        'columns': (BuildContext context) => ColumnsPage(),
+        'animation': (BuildContext context) => AnimationPage()
       },
     );
   }

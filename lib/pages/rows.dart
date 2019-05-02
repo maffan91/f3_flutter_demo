@@ -43,7 +43,7 @@ class RowsPage extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          title: Text('Rows Layout'),
+          title: Text('Rows Layout Demo'),
         ),
         drawer: NavDrawer(),
         body: Container(

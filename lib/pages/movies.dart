@@ -42,7 +42,7 @@ class MoviesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Movies'),
+        title: Text('List Builder Demo'),
       ),
       drawer: NavDrawer(),
       body: _buildMoviesList(),

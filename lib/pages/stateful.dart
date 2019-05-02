@@ -19,7 +19,7 @@ class _StatefulPageState extends State<StatefulPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Demo'),
+        title: Text('Stateful Widget Demo'),
       ),
       drawer: NavDrawer(),
       body: Center(

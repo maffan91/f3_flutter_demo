@@ -37,7 +37,7 @@ class StatelessPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Demo'),
+        title: Text('Stateless Widget Demo'),
       ),
       drawer: NavDrawer(),
       body: _buildWidget(),

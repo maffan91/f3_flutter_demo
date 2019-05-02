@@ -66,6 +66,7 @@ class NavDrawer extends StatelessWidget {
             child: ListTile(
               leading: Icon(Icons.wallpaper),
               title: Text('Animations'),
+              onTap: () => Navigator.pushReplacementNamed(context, 'animation'),
             ),
           ),
         ],
