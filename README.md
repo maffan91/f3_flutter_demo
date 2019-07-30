@@ -15,7 +15,17 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## Running Web project
+## Running Mobile App
+
+To run mobile app, follow these steps:
+
+- Checkout `dev` branch
+- Make sure you have connected an Android device OR you have a running Android Emulator
+- Run the following command:
+  - `flutter run android`
+- Alternatively you can run the project in Visual Studio Code by pressing `Ctrl + F5`
+
+## Running Web App
 
 Assuming you have already installed Flutter for web, follow these steps:
 
