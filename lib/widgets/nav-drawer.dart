@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_web/material.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -15,8 +15,7 @@ class NavDrawer extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.green,
                 image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage('assets/images/food.jpg'))),
+                    fit: BoxFit.fill, image: AssetImage('images/food.jpg'))),
           ),
           ListTile(
             leading: Icon(Icons.input),
@@ -56,13 +55,13 @@ class NavDrawer extends StatelessWidget {
             onTap: () => Navigator.pushReplacementNamed(context, 'form'),
           ),
           Container(
-            // decoration: BoxDecoration(
-            //     border: Border(
-            //   bottom: BorderSide(width: 1),
-            //   top: BorderSide(width: 1),
-            //   left: BorderSide(width: 1),
-            //   right: BorderSide(width: 1),
-            // )),
+            decoration: BoxDecoration(
+                border: Border(
+              bottom: BorderSide(width: 1),
+              top: BorderSide(width: 1),
+              left: BorderSide(width: 1),
+              right: BorderSide(width: 1),
+            )),
             child: ListTile(
               leading: Icon(Icons.wallpaper),
               title: Text('Animations'),

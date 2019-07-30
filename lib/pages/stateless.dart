@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_demo/models/movie.dart';
-import 'package:flutter_demo/widgets/nav-drawer.dart';
+import '../models/movie.dart';
+import '../widgets/nav-drawer.dart';
+import 'package:flutter_web/material.dart';
 
 class StatelessPage extends StatelessWidget {
   final Movie movie;

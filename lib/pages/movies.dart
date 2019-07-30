@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_demo/data/movie-list.dart';
-import 'package:flutter_demo/models/movie.dart';
-import 'package:flutter_demo/widgets/movie-card.dart';
-import 'package:flutter_demo/widgets/nav-drawer.dart';
+import '../data/movie-list.dart';
+import '../models/movie.dart';
+import '../widgets/movie-card.dart';
+import '../widgets/nav-drawer.dart';
+import 'package:flutter_web/material.dart';
 
 class MoviesPage extends StatelessWidget {
   final List<Movie> movies = MovieList.getMovies();

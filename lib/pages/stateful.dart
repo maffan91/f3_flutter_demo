@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_demo/widgets/nav-drawer.dart';
+import '../widgets/nav-drawer.dart';
+import 'package:flutter_web/material.dart';
 
 class StatefulPage extends StatefulWidget {
   @override
@@ -27,7 +27,7 @@ class _StatefulPageState extends State<StatefulPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'You have clicked the button this many times:',
             ),
             Text(
               '$_counter',

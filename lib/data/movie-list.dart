@@ -1,4 +1,4 @@
-import 'package:flutter_demo/models/movie.dart';
+import '../models/movie.dart';
 
 class MovieList {
   static Movie getSingleMovie() {

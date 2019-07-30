@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_demo/widgets/nav-drawer.dart';
+import '../widgets/nav-drawer.dart';
+import 'package:flutter_web/material.dart';
 
 class RowsPage extends StatelessWidget {
   Column _buildButton(Color color, IconData icon, String label) {

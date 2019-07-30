@@ -1,15 +1,20 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_demo/data/movie-list.dart';
-import 'package:flutter_demo/pages/animation.dart';
-import 'package:flutter_demo/pages/auth.dart';
-import 'package:flutter_demo/pages/columns.dart';
-import 'package:flutter_demo/pages/movies.dart';
-import 'package:flutter_demo/pages/rows.dart';
-import 'package:flutter_demo/pages/stateful.dart';
-import 'package:flutter_demo/pages/stateless.dart';
-import 'package:flutter_demo/pages/welcome.dart';
+import './data/movie-list.dart';
+import './pages/animation.dart';
+import './pages/auth.dart';
+import './pages/columns.dart';
+import './pages/movies.dart';
+import './pages/rows.dart';
+import './pages/stateful.dart';
+import './pages/stateless.dart';
+import './pages/welcome.dart';
+import 'package:flutter_web/material.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  // debugPaintSizeEnabled = true;
+  // debugPaintBaselinesEnabled = true;
+  // debugPaintPointersEnabled = true;
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -18,9 +23,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          brightness: Brightness.light,
-          primaryColor: Colors.green,
-          primarySwatch: Colors.yellow),
+        fontFamily: 'Lato',
+        brightness: Brightness.light,
+        primaryColor: Colors.green,
+      ),
       // home: WelcomePage(),
       routes: {
         '/': (BuildContext context) => WelcomePage(),

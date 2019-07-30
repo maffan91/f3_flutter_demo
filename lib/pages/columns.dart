@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_demo/widgets/nav-drawer.dart';
+import '../widgets/nav-drawer.dart';
+import 'package:flutter_web/material.dart';
 
 class ColumnsPage extends StatelessWidget {
   Widget _buildWidget() {
     return Container(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Text(
             "Flutter Columns",
@@ -15,7 +15,18 @@ class ColumnsPage extends StatelessWidget {
             onPressed: () {},
             icon: Icon(Icons.file_download),
           ),
-          Image.asset('assets/images/food.jpg')
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Center(
+                child: Image.asset(
+                  'images/food.jpg',
+                  fit: BoxFit.scaleDown,
+                  height: 468,
+                ),
+              )
+            ],
+          )
         ],
       ),
     );
