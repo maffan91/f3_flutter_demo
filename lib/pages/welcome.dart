@@ -1,5 +1,5 @@
-import '../widgets/nav-drawer.dart';
 import 'package:flutter_web/material.dart';
+import '../widgets/nav-drawer.dart';
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -12,8 +12,8 @@ class WelcomePage extends StatelessWidget {
       body: Container(
         child: Center(
           child: Text(
-            'Welcome to Flutter Demo',
-            style: TextStyle(fontSize: 30),
+            'Welcome to Flutter',
+            style: TextStyle(fontSize: 40),
           ),
         ),
       ),
